@@ -81,9 +81,11 @@ class CPU(ABC):
         :param ins: The instruction to execute
         """
         try:
-            self.instructions[ins.name](ins)
+            func = self.instructions[ins.name]
         except KeyError as ex:
             raise RuntimeError("Unknown instruction: {}".format(ins)) from ex
+        else:
+            func(ins)
 
     def load_program(self, program: Program):
         self.mmu.load_program(program)
