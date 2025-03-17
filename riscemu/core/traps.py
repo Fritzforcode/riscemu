@@ -1,5 +1,5 @@
 from enum import Enum
-from ..colors import FMT_PARSE, FMT_NONE
+from colors import FMT_PARSE, FMT_NONE
 from .privmodes import PrivModes
 from .csr_constants import MCAUSE_TRANSLATION
 from .exceptions import RiscemuBaseException

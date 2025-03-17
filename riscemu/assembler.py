@@ -3,8 +3,8 @@ from typing import List, Optional, Tuple, Union
 
 from riscemu.core.exceptions import ASSERT_LEN, ParseException
 
-from .colors import FMT_NONE, FMT_PARSE
-from .core import (
+from colors import FMT_NONE, FMT_PARSE
+from core import (
     BinaryDataMemorySection,
     Instruction,
     InstructionContext,
@@ -14,8 +14,8 @@ from .core import (
     SimpleInstruction,
     T_RelativeAddress,
 )
-from .helpers import align_addr, get_section_base_name, parse_numeric_argument
-from .tokenizer import Token
+from helpers import align_addr, get_section_base_name, parse_numeric_argument
+from tokenizer import Token
 
 INSTRUCTION_SECTION_NAMES = (".text", ".init", ".fini")
 """

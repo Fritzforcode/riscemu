@@ -8,7 +8,7 @@ from ..instructions.RV32I import *
 from riscemu.core.exceptions import INS_NOT_IMPLEMENTED
 from riscemu.core.traps import *
 from riscemu.core.privmodes import PrivModes
-from ..colors import FMT_CPU, FMT_NONE
+from colors import FMT_CPU, FMT_NONE
 import typing
 
 if typing.TYPE_CHECKING:

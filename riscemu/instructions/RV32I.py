@@ -6,9 +6,9 @@ SPDX-License-Identifier: MIT
 
 from .instruction_set import InstructionSet, ASSERT_LEN
 
-from ..colors import FMT_DEBUG, FMT_NONE
-from ..syscall import Syscall
-from ..core import Instruction, Int32, UInt32, UserModeCPU, LaunchDebuggerException
+from colors import FMT_DEBUG, FMT_NONE
+from syscall import Syscall
+from core import Instruction, Int32, UInt32, UserModeCPU, LaunchDebuggerException
 
 
 class RV32I(InstructionSet):

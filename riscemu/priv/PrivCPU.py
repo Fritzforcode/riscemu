@@ -16,7 +16,7 @@ from .PrivRV32I import PrivRV32I
 from core.privmodes import PrivModes
 from ..IO.TextIO import TextIO
 from ..instructions import RV32A, RV32M
-from ..core import Program, UInt32
+from core import Program, UInt32
 
 if typing.TYPE_CHECKING:
     pass

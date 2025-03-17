@@ -9,14 +9,14 @@ from dataclasses import dataclass
 from math import log2, ceil
 from typing import Dict, IO, Union
 
-from .core import (
+from core import (
     BinaryDataMemorySection,
     MemoryFlags,
     Int32,
     CPU,
     InvalidSyscallException,
 )
-from .colors import FMT_SYSCALL, FMT_NONE
+from colors import FMT_SYSCALL, FMT_NONE
 
 SYSCALLS = {
     63: "read",
@@ -69,7 +69,7 @@ class Syscall:
 
     @property
     def name(self):
-        return SYSCALLS.get(self.id, "unknown")
+        return SYSCALLS[self.id]
 
     def __repr__(self):
         return "Syscall(id={}, name={})".format(self.id, self.name)
@@ -105,7 +105,7 @@ class SyscallInterface:
         self.next_open_handle = 3
         self.open_files = {0: sys.stdin, 1: sys.stdout, 2: sys.stderr}
 
-        if getattr(self, scall.name):
+        if getattr(self, scall.name, False):
             getattr(self, scall.name)(scall)
         else:
             raise InvalidSyscallException(scall)
@@ -152,7 +152,7 @@ class SyscallInterface:
         if not isinstance(data, bytearray):
             print(
                 FMT_SYSCALL
-                + "[Syscall] write: writing from .text region not supported."
+                + "[Syscall] write: writing from text region not supported."
                 + FMT_NONE
             )
             return scall.ret(-1)

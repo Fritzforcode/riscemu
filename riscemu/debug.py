@@ -5,8 +5,8 @@ SPDX-License-Identifier: MIT
 """
 import os.path
 
-from .core import SimpleInstruction
-from .helpers import *
+from core import SimpleInstruction
+from helpers import *
 
 if typing.TYPE_CHECKING:
     pass

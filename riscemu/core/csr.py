@@ -4,7 +4,7 @@ from typing import Dict, Callable, Optional, Union
 from . import UInt32, PrivModes, csr_constants
 from .traps import InstructionAccessFault
 
-from ..colors import FMT_ERROR, FMT_NONE
+from colors import FMT_ERROR, FMT_NONE
 
 
 def _invalid_setter(addr: int, old_val: UInt32, new_val: UInt32):

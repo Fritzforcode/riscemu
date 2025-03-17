@@ -7,7 +7,7 @@ SPDX-License-Identifier: MIT
 from collections import defaultdict
 from typing import Type
 
-from ..helpers import *
+from helpers import *
 
 from . import Int32, BaseFloat
 

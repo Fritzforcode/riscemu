@@ -5,7 +5,7 @@ from riscemu.core import InstructionMemorySection, SimpleInstruction, Program
 
 if __name__ == "__main__":
     from core.usermode_cpu import UserModeCPU
-    from .instructions import InstructionSetDict
+    from instructions import InstructionSetDict
 
     cpu = UserModeCPU(list(InstructionSetDict.values()), RunConfig(verbosity=4))
 

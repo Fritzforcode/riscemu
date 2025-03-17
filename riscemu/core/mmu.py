@@ -6,8 +6,8 @@ SPDX-License-Identifier: MIT
 
 from typing import Dict, List, Optional, Union
 
-from ..colors import *
-from ..helpers import align_addr
+from colors import *
+from helpers import align_addr
 from . import (
     Instruction,
     MemorySection,

@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import List, Type, Callable, Set, Dict, TYPE_CHECKING
 
-from ..config import RunConfig
-from ..colors import FMT_NONE, FMT_CPU
+from config import RunConfig
+from colors import FMT_NONE, FMT_CPU
 from . import (
     T_AbsoluteAddress,
     Instruction,

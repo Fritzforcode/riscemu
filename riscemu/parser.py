@@ -7,11 +7,11 @@ import re
 from io import IOBase
 from typing import Dict, Tuple, Iterable, Callable, List, TextIO
 
-from .assembler import MemorySectionType, ParseContext, AssemblerDirectives
-from .colors import FMT_PARSE
-from .helpers import Peekable
-from .tokenizer import Token, TokenType, tokenize
-from .core import (
+from assembler import MemorySectionType, ParseContext, AssemblerDirectives
+from colors import FMT_PARSE
+from helpers import Peekable
+from tokenizer import Token, TokenType, tokenize
+from core import (
     Program,
     T_ParserOpts,
     ProgramLoader,

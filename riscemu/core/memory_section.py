@@ -2,8 +2,8 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from typing import Optional
 
-from ..colors import FMT_MEM, FMT_NONE, FMT_UNDERLINE, FMT_ORANGE, FMT_ERROR
-from ..helpers import format_bytes
+from colors import FMT_MEM, FMT_NONE, FMT_UNDERLINE, FMT_ORANGE, FMT_ERROR
+from helpers import format_bytes
 from . import (
     MemoryFlags,
     T_AbsoluteAddress,

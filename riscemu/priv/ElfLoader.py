@@ -4,8 +4,8 @@ from typing import List
 
 from core.traps import *
 from .types import ElfMemorySection
-from ..helpers import FMT_PARSE, FMT_NONE, FMT_GREEN, FMT_BOLD
-from ..core import MemoryFlags, Program, ProgramLoader, T_ParserOpts
+from helpers import FMT_PARSE, FMT_NONE, FMT_GREEN, FMT_BOLD
+from core import MemoryFlags, Program, ProgramLoader, T_ParserOpts
 
 FMT_ELF = FMT_GREEN + FMT_BOLD
 

@@ -1,7 +1,7 @@
 from typing import Union
 
 from .instruction_set import InstructionSet, Instruction
-from ..core import BaseFloat, Int32, Float32
+from core import BaseFloat, Int32, Float32
 
 
 class RV_Debug(InstructionSet):

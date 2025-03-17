@@ -5,13 +5,13 @@ from io import IOBase, RawIOBase, TextIOBase
 from typing import Type, Dict, List, Optional, Union
 import importlib_resources
 
-from . import __version__, __copyright__
-from .core import CPU, ProgramLoader, Program, UserModeCPU
-from .instructions import InstructionSet, InstructionSetDict
-from .config import RunConfig
-from .helpers import FMT_GRAY, FMT_NONE
-from .parser import AssemblyFileLoader
-from .instructions.float_base import FloatArithBase
+from acv import __version__, __copyright__
+from core import CPU, ProgramLoader, Program, UserModeCPU
+from instructions import InstructionSet, InstructionSetDict
+from config import RunConfig
+from helpers import FMT_GRAY, FMT_NONE
+from parser import AssemblyFileLoader
+from instructions.float_base import FloatArithBase
 
 
 @dataclass

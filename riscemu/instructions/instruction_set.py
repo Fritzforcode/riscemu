@@ -8,8 +8,8 @@ from typing import Tuple, Callable, Dict, Union, Iterable
 
 from abc import ABC
 
-from ..core.exceptions import ASSERT_LEN
-from ..core import Instruction, Int32, UInt32, Immediate, CPU, Registers
+from core.exceptions import ASSERT_LEN
+from core import Instruction, Int32, UInt32, Immediate, CPU, Registers
 
 
 class InstructionSet(ABC):

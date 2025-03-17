@@ -1,7 +1,7 @@
 from typing import List, Optional, Set
 
-from ..colors import FMT_RED, FMT_BOLD, FMT_NONE, FMT_MEM
-from ..helpers import get_section_base_name
+from colors import FMT_RED, FMT_BOLD, FMT_NONE, FMT_MEM
+from helpers import get_section_base_name
 from . import InstructionContext, T_AbsoluteAddress, MemorySection
 
 

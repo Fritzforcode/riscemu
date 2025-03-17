@@ -9,7 +9,7 @@ from . import (
     Immediate,
     NumberFormatException,
 )
-from ..helpers import parse_numeric_argument
+from helpers import parse_numeric_argument
 
 _NUM_LABEL_RE = re.compile(r"[0-9][fb]")
 _INT_IMM_RE = re.compile(r"[+-]?([0-9]+|0x[A-Fa-f0-9]+)")

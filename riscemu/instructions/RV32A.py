@@ -1,6 +1,6 @@
 from .instruction_set import InstructionSet, Instruction
 from riscemu.core.exceptions import INS_NOT_IMPLEMENTED
-from ..core import Int32, UInt32
+from core import Int32, UInt32
 
 
 class RV32A(InstructionSet):

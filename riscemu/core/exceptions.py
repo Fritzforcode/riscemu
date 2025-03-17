@@ -5,7 +5,7 @@ SPDX-License-Identifier: MIT
 """
 
 from abc import abstractmethod
-from ..colors import *
+from colors import *
 import typing
 
 if typing.TYPE_CHECKING:

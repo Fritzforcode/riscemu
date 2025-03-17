@@ -9,10 +9,10 @@ on them.
 import typing
 from typing import List, Type
 
-from ..config import RunConfig
-from ..colors import FMT_CPU, FMT_NONE, FMT_ERROR, FMT_GRAY, FMT_CYAN
-from ..debug import launch_debug_session
-from ..syscall import SyscallInterface, get_syscall_symbols
+from config import RunConfig
+from colors import FMT_CPU, FMT_NONE, FMT_ERROR, FMT_GRAY, FMT_CYAN
+from debug import launch_debug_session
+from syscall import SyscallInterface, get_syscall_symbols
 from . import (
     CPU,
     Int32,

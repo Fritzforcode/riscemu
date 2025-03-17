@@ -1,8 +1,8 @@
 from collections import defaultdict
 from typing import Dict, List, Optional
 
-from .exceptions import ParseException
-from ..core import T_AbsoluteAddress, T_RelativeAddress, NUMBER_SYMBOL_PATTERN
+from core.exceptions import ParseException
+from core import T_AbsoluteAddress, T_RelativeAddress, NUMBER_SYMBOL_PATTERN
 
 
 class InstructionContext:

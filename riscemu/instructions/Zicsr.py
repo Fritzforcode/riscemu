@@ -1,9 +1,9 @@
 from typing import Tuple
 
 from .instruction_set import InstructionSet, Instruction
-from ..core import Int32, UInt32
-from ..core.csr_constants import CSR_NAME_TO_ADDR
-from ..helpers import parse_numeric_argument
+from core import Int32, UInt32
+from core.csr_constants import CSR_NAME_TO_ADDR
+from helpers import parse_numeric_argument
 
 
 class Zicsr(InstructionSet):

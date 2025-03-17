@@ -7,8 +7,8 @@ This file holds the logic for starting the emulator from the CLI
 """
 import sys
 
-from .core import RiscemuBaseException
-from .riscemu_main import RiscemuMain
+from core import RiscemuBaseException
+from riscemu_main import RiscemuMain
 
 
 def main():
