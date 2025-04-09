@@ -50,7 +50,6 @@ class RiscemuMain:
         self.cfg: Optional[RunConfig] = cfg
         self.cpu: Optional[CPU] = None
         self.input_files = []
-        self.selected_ins_sets = []
 
     def instantiate_cpu(self):
         self.cpu = UserModeCPU(self.selected_ins_sets, self.cfg)
